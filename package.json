@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages-deploy",
-    "clean-source": "rimraf README.md src webroot package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,9 +24,6 @@
   "gh-pages-deploy": {
     "staticpath": "dist",
     "cname": "casa.holiday",
-    "post": [
-      "clean-source"
-    ],
     "noprompt": false
   }
 }
