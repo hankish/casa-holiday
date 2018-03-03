@@ -1,0 +1,33 @@
+{
+  "name": "casa-holiday",
+  "version": "1.0.0",
+  "description": "Simple navigation website for home network.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hankish/casa-holiday.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hankish/casa-holiday/issues"
+  },
+  "homepage": "https://github.com/hankish/casa-holiday#readme",
+  "devDependencies": {
+    "gh-pages-deploy": "^0.4.2"
+  },
+
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "cname": "casa.holiday",
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
+  },
+}
